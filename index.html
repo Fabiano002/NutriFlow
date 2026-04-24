@@ -1,0 +1,792 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NutriFlow — Atendimento Inteligente para Nutricionistas</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav id="navbar">
+      <div class="logo"><span class="logo-dot"></span>NutriFlow</div>
+      <div class="nav-links">
+        <a href="#problemas">Problemas</a>
+        <a href="#solucao">Solução</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <a href="#contato" class="btn-nav">Quero experimentar</a>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span></span> Sistema de pré-atendimento inteligente
+        </div>
+        <h1>Chega de perder tempo com pacientes que não convertem</h1>
+        <p class="hero-sub">
+          Automatize o pré-atendimento do seu consultório. Filtre leads
+          qualificados, economize horas por semana e atenda apenas quem
+          realmente está pronto para fechar.
+        </p>
+        <div class="cta-group">
+          <a href="#contato" class="btn-primary">
+            <svg class="wapp-icon" viewBox="0 0 24 24">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"
+              />
+              <path
+                d="M11.99 2C6.469 2 2 6.469 2 12c0 1.861.506 3.603 1.383 5.104L2.05 22l5.01-1.316A9.972 9.972 0 0011.99 22C17.511 22 22 17.531 22 12c0-5.531-4.489-10-10.01-10zm0 18.261c-1.664 0-3.208-.476-4.519-1.293l-.323-.198-3.358.881.897-3.263-.215-.334A8.26 8.26 0 013.74 12c0-4.555 3.706-8.261 8.25-8.261 4.543 0 8.25 3.706 8.25 8.261 0 4.555-3.707 8.261-8.25 8.261z"
+              />
+            </svg>
+            Quero mais pacientes qualificados
+          </a>
+          <a href="#solucao" class="btn-secondary">Ver como funciona →</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">3x</span
+            ><span class="stat-label">mais conversões</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">5h+</span
+            ><span class="stat-label">economizadas por semana</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">100%</span
+            ><span class="stat-label">automatizado</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div style="position: relative; max-width: 360px; margin: 0 auto">
+          <div class="phone-mockup">
+            <div class="phone-header">
+              <div class="phone-avatar">🥦</div>
+              <div class="phone-header-text">
+                <div class="phone-header-name">Assistente NutriFlow</div>
+                <div class="phone-header-status">● Online agora</div>
+              </div>
+            </div>
+            <div class="chat-bubble">
+              <div class="bubble bot">
+                Olá! Para te atender melhor, me conta: qual é seu principal
+                objetivo com a nutrição?
+              </div>
+            </div>
+            <div class="chat-bubble">
+              <div class="bubble user">
+                Quero emagrecer e melhorar minha saúde
+              </div>
+            </div>
+            <div class="chat-bubble">
+              <div class="bubble bot">
+                Perfeito! Você já tentou alguma dieta antes? E tem
+                disponibilidade para iniciar esse mês?
+              </div>
+            </div>
+            <div class="chat-bubble">
+              <div class="bubble user">
+                Sim, tenho urgência, quero começar logo!
+              </div>
+            </div>
+            <div class="tag-lead">Lead qualificado — enviado para WhatsApp</div>
+          </div>
+          <div class="float-card top-right">
+            <div class="fc-label">Taxa de conversão</div>
+            <div class="fc-val fc-green">↑ 68%</div>
+          </div>
+          <div class="float-card bottom-left">
+            <div class="fc-label">Tempo poupado hoje</div>
+            <div class="fc-val">4h 20min</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEMS -->
+    <section class="section problems-bg" id="problemas">
+      <div class="text-center">
+        <div class="section-tag">Você se identifica?</div>
+        <h2>A rotina que drena a sua energia<br />— e os seus resultados</h2>
+        <p class="section-sub">
+          Você estudou anos para cuidar de pessoas, não para responder mensagens
+          repetitivas o dia todo.
+        </p>
+      </div>
+      <div class="problems-grid">
+        <div class="problem-card">
+          <div class="problem-icon">⏳</div>
+          <h3>Tempo desperdiçado com curiosos</h3>
+          <p>
+            Você responde dezenas de mensagens por dia — valores, horários,
+            dúvidas — e a maioria nunca agenda. É energia indo embora.
+          </p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">📉</div>
+          <h3>Contatos que não viram consultas</h3>
+          <p>
+            Muita gente entra em contato por impulso ou curiosidade. Sem filtro,
+            você investe tempo em quem não tem intenção real de fechar.
+          </p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">🐢</div>
+          <h3>Demora para responder prejudica você</h3>
+          <p>
+            Quando você demora a responder, o paciente vai buscar outro
+            nutricionista. A velocidade no atendimento impacta diretamente a
+            conversão.
+          </p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">🔄</div>
+          <h3>As mesmas perguntas, todo dia</h3>
+          <p>
+            "Quanto custa?", "Você atende online?", "Aceita plano?" — você
+            responde isso dezenas de vezes toda semana, manualmente.
+          </p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">🎯</div>
+          <h3>Sem critério para priorizar quem atender</h3>
+          <p>
+            Você não sabe quem está pronto para comprar e quem está só
+            pesquisando. Todos parecem iguais até você investir tempo neles.
+          </p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">😓</div>
+          <h3>Esgotamento no pré-atendimento</h3>
+          <p>
+            Antes mesmo de atender um paciente de verdade, você já gastou
+            energia com pessoas que nunca vão fechar. Isso é desgastante e
+            desnecessário.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUTION -->
+    <section class="section" id="solucao">
+      <div
+        style="
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 64px;
+          align-items: center;
+        "
+      >
+        <div>
+          <div class="section-tag">A solução</div>
+          <h2>
+            Um sistema que trabalha por você
+            <span style="color: var(--green-500)">24 horas por dia</span>
+          </h2>
+          <p class="section-sub" style="margin-bottom: 28px">
+            O NutriFlow faz o pré-atendimento automático dos seus pacientes —
+            coleta informações, analisa o nível de interesse e só te envia quem
+            está pronto para fechar.
+          </p>
+          <ul
+            style="
+              list-style: none;
+              display: flex;
+              flex-direction: column;
+              gap: 14px;
+              margin-bottom: 32px;
+            "
+          >
+            <li
+              style="
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: 0.95rem;
+                color: var(--slate-700);
+              "
+            >
+              <span style="color: var(--green-500); font-size: 1rem">✓</span>
+              Formulário inteligente com perguntas estratégicas
+            </li>
+            <li
+              style="
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: 0.95rem;
+                color: var(--slate-700);
+              "
+            >
+              <span style="color: var(--green-500); font-size: 1rem">✓</span>
+              Classificação automática: quente, morno ou frio
+            </li>
+            <li
+              style="
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: 0.95rem;
+                color: var(--slate-700);
+              "
+            >
+              <span style="color: var(--green-500); font-size: 1rem">✓</span>
+              Apenas leads quentes chegam até você
+            </li>
+            <li
+              style="
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: 0.95rem;
+                color: var(--slate-700);
+              "
+            >
+              <span style="color: var(--green-500); font-size: 1rem">✓</span>
+              Integração direta com seu WhatsApp
+            </li>
+            <li
+              style="
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: 0.95rem;
+                color: var(--slate-700);
+              "
+            >
+              <span style="color: var(--green-500); font-size: 1rem">✓</span>
+              Funciona mesmo enquanto você dorme
+            </li>
+          </ul>
+          <a href="#contato" class="btn-primary">Quero esse sistema →</a>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 14px">
+          <div
+            style="
+              background: var(--green-50);
+              border: 1px solid var(--green-100);
+              border-radius: var(--radius-lg);
+              padding: 24px 22px;
+              display: flex;
+              gap: 16px;
+              align-items: flex-start;
+            "
+          >
+            <div
+              style="
+                background: var(--green-400);
+                color: white;
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 700;
+                flex-shrink: 0;
+                font-family: var(--font-display);
+              "
+            >
+              1
+            </div>
+            <div>
+              <h3
+                style="
+                  font-family: var(--font-display);
+                  font-size: 0.95rem;
+                  font-weight: 600;
+                  margin-bottom: 6px;
+                  color: var(--slate-900);
+                "
+              >
+                Paciente acessa o formulário
+              </h3>
+              <p
+                style="
+                  font-size: 0.87rem;
+                  color: var(--slate-600);
+                  line-height: 1.6;
+                "
+              >
+                Através de um link personalizado, o paciente responde perguntas
+                estratégicas sobre seu objetivo, disponibilidade e urgência.
+              </p>
+            </div>
+          </div>
+          <div
+            style="
+              background: var(--slate-50);
+              border: 1px solid var(--slate-200);
+              border-radius: var(--radius-lg);
+              padding: 24px 22px;
+              display: flex;
+              gap: 16px;
+              align-items: flex-start;
+            "
+          >
+            <div
+              style="
+                background: var(--teal-400);
+                color: white;
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 700;
+                flex-shrink: 0;
+                font-family: var(--font-display);
+              "
+            >
+              2
+            </div>
+            <div>
+              <h3
+                style="
+                  font-family: var(--font-display);
+                  font-size: 0.95rem;
+                  font-weight: 600;
+                  margin-bottom: 6px;
+                  color: var(--slate-900);
+                "
+              >
+                Sistema analisa e classifica
+              </h3>
+              <p
+                style="
+                  font-size: 0.87rem;
+                  color: var(--slate-600);
+                  line-height: 1.6;
+                "
+              >
+                A automação processa as respostas e categoriza o lead em quente,
+                morno ou frio com base no perfil e intenção de compra.
+              </p>
+            </div>
+          </div>
+          <div
+            style="
+              background: var(--slate-50);
+              border: 1px solid var(--slate-200);
+              border-radius: var(--radius-lg);
+              padding: 24px 22px;
+              display: flex;
+              gap: 16px;
+              align-items: flex-start;
+            "
+          >
+            <div
+              style="
+                background: var(--slate-800);
+                color: white;
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 700;
+                flex-shrink: 0;
+                font-family: var(--font-display);
+              "
+            >
+              3
+            </div>
+            <div>
+              <h3
+                style="
+                  font-family: var(--font-display);
+                  font-size: 0.95rem;
+                  font-weight: 600;
+                  margin-bottom: 6px;
+                  color: var(--slate-900);
+                "
+              >
+                Você recebe só os melhores leads
+              </h3>
+              <p
+                style="
+                  font-size: 0.87rem;
+                  color: var(--slate-600);
+                  line-height: 1.6;
+                "
+              >
+                Apenas pacientes com alto potencial chegam ao seu WhatsApp — com
+                um resumo pronto das respostas deles. Você fecha com muito mais
+                eficiência.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section
+      class="section"
+      id="beneficios"
+      style="background: var(--slate-50)"
+    >
+      <div class="text-center">
+        <div class="section-tag">Benefícios</div>
+        <h2>Tudo que você ganha ao automatizar<br />o seu pré-atendimento</h2>
+        <p class="section-sub">
+          Não é só sobre economizar tempo. É sobre ter um consultório que cresce
+          com inteligência.
+        </p>
+      </div>
+      <div class="benefits-grid mt-52">
+        <div class="benefit-card">
+          <div class="benefit-icon">🕐</div>
+          <div>
+            <h3>Mais tempo para o que importa</h3>
+            <p>
+              Elimine as horas gastas com triagem manual. Dedique sua energia a
+              consultas de verdade, conteúdo e desenvolvimento profissional.
+            </p>
+          </div>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">📈</div>
+          <div>
+            <h3>Taxa de conversão muito maior</h3>
+            <p>
+              Ao falar apenas com quem está pronto para fechar, você converte
+              significativamente mais contatos em consultas pagas.
+            </p>
+          </div>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">🏆</div>
+          <div>
+            <h3>Imagem mais profissional</h3>
+            <p>
+              Um processo de pré-atendimento estruturado transmite organização e
+              autoridade. O paciente chega com mais respeito e valorização.
+            </p>
+          </div>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">⚡</div>
+          <div>
+            <h3>Resposta imediata, sem esforço</h3>
+            <p>
+              O sistema responde automaticamente a qualquer hora do dia ou da
+              noite. Nenhum paciente fica sem retorno enquanto você descansa.
+            </p>
+          </div>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">🎯</div>
+          <div>
+            <h3>Filtro inteligente de leads</h3>
+            <p>
+              Chega de gastar energia com quem só está pesquisando preço. Você
+              foca em quem tem urgência, objetivo claro e disposição para
+              investir.
+            </p>
+          </div>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">📋</div>
+          <div>
+            <h3>Contexto completo antes da conversa</h3>
+            <p>
+              Você recebe um resumo das respostas do paciente antes de entrar em
+              contato. Cada conversa começa personalizada e direcionada.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW WE IMPLEMENT -->
+    <section class="section process-bg">
+      <div class="text-center">
+        <div class="section-tag">Como implementamos</div>
+        <h2>Você não precisa entender de tecnologia</h2>
+        <p class="section-sub">
+          Nós fazemos todo o trabalho de configuração. Você só precisa estar
+          pronto para receber mais pacientes qualificados.
+        </p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="ps-circle">🗓️</div>
+          <h3>1. Bate-papo inicial</h3>
+          <p>
+            Entendemos seu perfil, público e como você atende hoje. Mapeamos as
+            perguntas certas para filtrar seus melhores leads.
+          </p>
+        </div>
+        <div class="process-step">
+          <div class="ps-circle">⚙️</div>
+          <h3>2. Montamos tudo para você</h3>
+          <p>
+            Criamos o formulário inteligente, configuramos a automação de
+            classificação e integramos tudo com seu WhatsApp.
+          </p>
+        </div>
+        <div class="process-step">
+          <div class="ps-circle">🚀</div>
+          <h3>3. Você ativa e colhe resultados</h3>
+          <p>
+            Com tudo funcionando, você começa a receber apenas leads
+            qualificados. Acompanhamos os primeiros dias para garantir tudo
+            perfeito.
+          </p>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 52px">
+        <a href="#contato" class="btn-white">Quero começar agora →</a>
+      </div>
+    </section>
+
+    <!-- TRUST -->
+    <section class="section" id="sobre">
+      <div class="trust-grid">
+        <div class="trust-content">
+          <div class="section-tag">Por que confiar</div>
+          <h2>Um sistema criado especialmente para nutricionistas</h2>
+          <p class="section-sub">
+            Não é uma solução genérica. Entendemos a rotina do consultório e
+            desenvolvemos um processo que se encaixa no seu fluxo de trabalho.
+          </p>
+          <div class="trust-points">
+            <div class="trust-point">
+              <div class="check-icon">✓</div>
+              Sistema focado em pré-atendimento, não em diagnósticos clínicos
+            </div>
+            <div class="trust-point">
+              <div class="check-icon">✓</div>
+              Privacidade dos dados dos pacientes garantida
+            </div>
+            <div class="trust-point">
+              <div class="check-icon">✓</div>
+              Suporte humanizado durante toda a implementação
+            </div>
+            <div class="trust-point">
+              <div class="check-icon">✓</div>
+              Personalizado para o seu nicho e perfil de pacientes
+            </div>
+            <div class="trust-point">
+              <div class="check-icon">✓</div>
+              Sem necessidade de conhecimento técnico da sua parte
+            </div>
+          </div>
+          <div class="trust-numbers">
+            <div class="trust-num-card">
+              <div class="big">97%</div>
+              <div class="small">satisfação dos clientes</div>
+            </div>
+            <div class="trust-num-card">
+              <div class="big">48h</div>
+              <div class="small">para implementar</div>
+            </div>
+            <div class="trust-num-card">
+              <div class="big">3x</div>
+              <div class="small">mais conversões</div>
+            </div>
+            <div class="trust-num-card">
+              <div class="big">7/24</div>
+              <div class="small">funcionando sempre</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">
+              "Antes eu passava horas no WhatsApp respondendo as mesmas
+              perguntas. Hoje só falo com quem já quer marcar consulta. Minha
+              conversão triplicou e tenho muito mais tempo para os meus
+              pacientes de verdade."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">CB</div>
+              <div>
+                <div class="author-name">Camila Borges</div>
+                <div class="author-role">
+                  Nutricionista Esportiva · São Paulo
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card" style="margin-top: 16px">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">
+              "Implementei em menos de dois dias e já na primeira semana os
+              resultados apareceram. Os leads que chegam para mim agora são
+              muito mais qualificados e o fechamento fica muito mais fácil."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">RO</div>
+              <div>
+                <div class="author-name">Rafael Oliveira</div>
+                <div class="author-role">Nutricionista Clínico · Curitiba</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq-bg" id="faq">
+      <div class="text-center">
+        <div class="section-tag">Perguntas frequentes</div>
+        <h2>Tudo que você precisa saber</h2>
+        <p class="section-sub">
+          Tire suas dúvidas antes de dar o próximo passo.
+        </p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            Preciso ter conhecimento técnico para usar?
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-a">
+            Não. Nós configuramos tudo para você do zero. Você só precisa nos
+            dar as informações sobre seu atendimento e nós cuidamos da parte
+            técnica. Em menos de 48 horas o sistema já está no ar.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            O sistema substitui o meu WhatsApp?
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-a">
+            Não — e essa é justamente a ideia. O sistema filtra os leads antes
+            deles chegarem ao seu WhatsApp. Quando alguém te manda mensagem,
+            você já sabe que é um lead qualificado, com contexto completo das
+            respostas dele.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            Isso substitui o atendimento humanizado?
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-a">
+            De jeito nenhum. O NutriFlow cuida do pré-atendimento — a triagem e
+            qualificação. Todo o atendimento real, a consulta e o acompanhamento
+            continuam sendo feitos por você. Você só elimina a parte repetitiva
+            e desgastante.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            O sistema faz algum tipo de diagnóstico?
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-a">
+            Não. O NutriFlow é um sistema de pré-atendimento e qualificação de
+            leads, não de diagnóstico clínico ou nutricional. Ele apenas coleta
+            informações preliminares e avalia o interesse e prontidão do
+            paciente em marcar uma consulta.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            Os dados dos meus pacientes ficam protegidos?
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-a">
+            Sim. Seguimos boas práticas de privacidade e os dados coletados pelo
+            formulário são utilizados exclusivamente para a qualificação do lead
+            e entregues a você. Trabalhamos com segurança e respeito às
+            informações dos seus pacientes.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            Em quanto tempo vejo resultados?
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-a">
+            A maioria dos nossos clientes já percebe diferença na primeira
+            semana — com menos tempo gasto em triagem e contatos mais
+            qualificados chegando. A melhora na taxa de conversão costuma
+            aparecer nas primeiras semanas de uso.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta" id="contato">
+      <div style="position: relative; z-index: 1">
+        <div
+          class="section-tag"
+          style="
+            background: rgba(52, 195, 122, 0.15);
+            color: var(--green-200);
+            border-color: rgba(52, 195, 122, 0.3);
+            margin-bottom: 20px;
+          "
+        >
+          Pronto para começar?
+        </div>
+        <h2>Transforme seu atendimento.<br />Atenda menos, converta mais.</h2>
+        <p>
+          Entre em contato agora e veja como o NutriFlow pode funcionar para o
+          seu consultório. Sem compromisso, sem complicação.
+        </p>
+        <div class="cta-buttons">
+          <a
+            href="https://wa.me/5500000000000?text=Olá!%20Quero%20saber%20mais%20sobre%20o%20NutriFlow"
+            class="btn-white"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg
+              class="wapp-icon"
+              viewBox="0 0 24 24"
+              style="width: 18px; height: 18px; fill: var(--green-600)"
+            >
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"
+              />
+              <path
+                d="M11.99 2C6.469 2 2 6.469 2 12c0 1.861.506 3.603 1.383 5.104L2.05 22l5.01-1.316A9.972 9.972 0 0011.99 22C17.511 22 22 17.531 22 12c0-5.531-4.489-10-10.01-10zm0 18.261c-1.664 0-3.208-.476-4.519-1.293l-.323-.198-3.358.881.897-3.263-.215-.334A8.26 8.26 0 013.74 12c0-4.555 3.706-8.261 8.25-8.261 4.543 0 8.25 3.706 8.25 8.261 0 4.555-3.707 8.261-8.25 8.261z"
+              />
+            </svg>
+            Falar no WhatsApp agora
+          </a>
+          <a href="#solucao" class="btn-outline-white">Rever como funciona</a>
+        </div>
+        <p
+          style="
+            margin-top: 28px;
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.3);
+          "
+        >
+          Sistema de pré-atendimento. Não realiza diagnósticos clínicos ou
+          nutricionais.
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <span
+        >© 2025 NutriFlow · Sistema de Automação de Pré-atendimento para
+        Nutricionistas</span
+      ><span>·</span> <a href="#">Política de Privacidade</a><span>·</span>
+      <a href="#">Termos de Uso</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
